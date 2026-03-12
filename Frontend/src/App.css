@@ -1,0 +1,71 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #080402;
+  color: white;
+}
+
+/* Chrome, Safari, Edge ke liye */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox ke liye */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE aur purane Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.react-github-calendar {
+  overflow: hidden  /* scrollbar remove */
+}
+
+.react-github-calendar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.react-github-calendar {
+  -ms-overflow-style: none;  /* IE aur purane Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+/* CSS */
+.perspective {
+  perspective: 800px; /* Gives the 3D effect */
+}
+
+@keyframes spin-y {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-y {
+  animation: spin-y 2s linear infinite; /* Adjust speed by changing 2s */
+  transform-style: preserve-3d;
+  /* backface-visibility: hidden; Prevents flicker */
+}
+
+
+
+
+
