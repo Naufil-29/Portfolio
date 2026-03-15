@@ -143,7 +143,7 @@ export default function HomePage() {
               <div className="flex items-center justify-between">
                 <h2 className="relative font-bold text-lg sm:text-[20px]">CoursERA</h2>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <a href="https://cousera-959f.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://coursera-oanq.onrender.com" target="_blank" rel="noopener noreferrer">
                     <p className="flex gap-2 text-[12px] w-25 font-bold bg-black rounded-lg decoration-0 p-1 text-center items-center">
                       <Earth alt="url" className="w-8 h-8 animate-spin-slow text-blue-500" />
                       Live-App

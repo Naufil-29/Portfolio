@@ -54,7 +54,7 @@ const projects = [
     video: courseVideo,
     githubUrl: 'https://github.com/Naufil-29/course-selling-SaaS',
     demoUrl: 'https://youtu.be/_PGDgbsfRIQ',
-    liveUrl: 'https://cousera-959f.onrender.com',
+    liveUrl: 'https://coursera-oanq.onrender.com',
     features: [
       'User authentication and role-based access (learner / admin)',
       'Course catalog with purchase and enrollment',
