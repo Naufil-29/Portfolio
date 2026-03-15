@@ -85,7 +85,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="twitter-profile min-h-[180px] md:h-55 w-full p-3 rounded-2xl bg-black border-[#171716]">
+            <div className="twitter-profile hidden md:inline-flex min-h-[180px] md:h-55  w-full p-3 rounded-2xl bg-black border-[#171716]">
               <a href="https://x.com/Naufil_Codes_29">
                 <div className="border-b pb-1 flex items-center justify-between font-bold text-xs">
                   <h3 className="pl-2">TwitterX</h3>
@@ -96,9 +96,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className="main-profile w-full min-h-0 md:h-75 rounded-2xl mt-4 md:mt-5 bg-black border-[#171716] p-4 sm:p-6 md:p-8">
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
-              <div className="relative w-28 h-20 sm:w-36 sm:h-24 md:w-40 md:h-28 rounded-lg overflow-hidden flex-shrink-0">
-                <img src={avatar2} alt="profile" className="w-full h-full border-1 border-white object-cover rounded-lg relative z-10" />
+            <div className="flex flex-row sm:flex-row gap-4 md:gap-5">
+              <div className="relative w-28 h-30 sm:w-40 sm:h-50 md:w-36 md:h-28 rounded-lg  flex-shrink-0">
+                <img src={avatar2} alt="profile" className="w-full h-full mt-4 border-1 border-white object-cover rounded-lg relative z-10 sm:w-full sm:h-full" />
               </div>
               <div className="w-full flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-3 min-w-0">
                 <div className="min-w-0">
@@ -283,22 +283,22 @@ export default function HomePage() {
               <h4 className="text-[12px] font-bold relative top-0 mr-1">Contact</h4>
             </div>
             <div className="w-full min-h-[80px] md:h-30 flex flex-wrap gap-2 mt-4 md:mt-6">
-              <div className="w-1/2 min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
+              <div className="w-1/4 bg-white md:bg-black min-w-[120px]  flex-1 rounded-lg flex items-center justify-center">
                 <a href="https://github.com/Naufil-29" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={Github} alt="Github" />
                 </a>
               </div>
-              <div className="w-1/2 min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
+              <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
                 <a href="https://x.com/Naufil_Codes_29" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={X} alt="TwitterX" />
                 </a>
               </div>
-              <div className="w-1/2 min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
+              <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
                 <a href="https://www.linkedin.com/in/naufil-kathiyara-981353360/" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={linkedin} alt="LinkedIN" />
                 </a>
               </div>
-              <div className="w-1/2 min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
+              <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
                 <a href="mailto:dev.naufil@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Naufil,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl hover:scale-110 transition-transform object-contain" src={gmail} alt="Email" />
                 </a>

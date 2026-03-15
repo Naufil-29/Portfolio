@@ -111,7 +111,7 @@ export default function ProjectPage() {
             key={project.id}
             className="rounded-2xl bg-black border border-[#171716] p-4 sm:p-6 md:p-8 text-white overflow-hidden"
           >
-            <div className="flex flex-col md:flex-row md:items-start gap-6">
+            <div className="flex flex-col p-3 md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0 w-full md:w-[420px]">
                 <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="block">
                   <video

@@ -38,8 +38,8 @@ export default function Layout() {
       <div className="px-4 sm:px-6 lg:px-0 lg:ml-25 lg:mr-25 bg-[#171715] flex-1">
         <nav className="navbar flex pt-2 justify-between items-center p-3 shadow-md rounded-2xl bg-black border-b-1">
           <div className="flex items-center gap-3 sm:gap-6 md:gap-8 min-w-0">
-            <div className="h-12 w-12 sm:h-16 sm:w-16 md:h-25 md:w-25 flex-shrink-0">
-              <img src={fullAvatar} className="h-full w-full object-cover rounded-2xl" alt="Naufil" />
+            <div className="h-15 w-15 rounded-xl sm:h-16 sm:w-16 md:h-25 md:ml-10 flex-shrink-0">
+              <img src={fullAvatar} className="h-full w-full object-contain rounded-2xl" alt="Naufil" />
             </div>
             <span className="min-w-0">
               <h1 className="text-sm sm:text-base md:text-lg truncate">Naufil_Kathiyara</h1>
@@ -68,18 +68,18 @@ export default function Layout() {
         <Outlet />
       </div>
 
-      <footer className="mt-auto border-t border-[#27272a] bg-[#0f0f0f] text-gray-400">
+      <footer className="mt-auto flex items-center justify-center gap-5 md:inline border-t border-[#27272a] bg-[#0f0f0f] text-gray-400">
         <div className="px-4 sm:px-6 lg:px-0 lg:ml-25 lg:mr-25 py-10">
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+          <div className="flex justify-between gap-15 items-center md:flex-row  md:items-start md:justify-between">
             <div className="flex items-start gap-6">
               <img
                 src={avatar}
                 alt=""
-                className="w-12 h-12 rounded-lg object-cover flex-shrink-0 opacity-90"
+                className="w-12 h-12 hidden md:inline rounded-lg object-cover flex-shrink-0 opacity-90"
               />
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Navigate</h3>
-                <div className="grid grid-cols-2 gap-x-8 gap-y-1">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
                   <Link to="/" className="text-sm hover:text-white transition-colors">Home</Link>
                   <Link to="/projects" className="text-sm hover:text-white transition-colors">Projects</Link>
                   <a href="#" className="text-sm hover:text-white transition-colors">Resume</a>
@@ -89,7 +89,7 @@ export default function Layout() {
             </div>
             <div>
               <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Connect</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {CONNECT_LINKS.map(({ href, Icon, label }) => (
                   <a
                     key={label}
