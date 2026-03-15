@@ -58,7 +58,7 @@ const projects = [
     features: [
       'User authentication and role-based access (learner / admin)',
       'Course catalog with purchase and enrollment',
-      'Video/content delivery and progress tracking',
+      'Video/content delivery',
       'Stripe integration for payments',
       'Admin dashboard for content and sales management'
     ],
@@ -102,14 +102,14 @@ const projects = [
 
 export default function ProjectPage() {
   return (
-    <div className="mt-6 pb-12">
-      <h1 className="text-2xl font-bold text-white mb-2 px-1">Projects</h1>
+    <div className="mt-4 md:mt-6 pb-8 md:pb-12 px-0">
+      <h1 className="text-xl sm:text-2xl font-bold text-white mb-4 md:mb-2">Projects</h1>
 
       <div className="flex flex-col gap-10">
         {projects.map((project) => (
           <article
             key={project.id}
-            className="rounded-2xl bg-black border border-[#171716] p-6 md:p-8 text-white overflow-hidden"
+            className="rounded-2xl bg-black border border-[#171716] p-4 sm:p-6 md:p-8 text-white overflow-hidden"
           >
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0 w-full md:w-[420px]">
@@ -127,13 +127,13 @@ export default function ProjectPage() {
                 </a>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <h2 className="text-xl font-bold">{project.title}</h2>
-                  <div className="flex items-center justify-center gap-5"> 
+                <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-2 mb-2">
+                  <h2 className="text-lg sm:text-xl font-bold">{project.title}</h2>
+                  <div className="flex items-center justify-start sm:justify-center gap-2 sm:gap-5 flex-wrap"> 
                     <a
                     href={project.githubUrl}
                     target="_blank"
-                    rel="nooopenter noreferrer"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm font-bold bg-[#171716] hover:bg-[#27272a] rounded-lg px-3 py-2 text-white transition-colors"
                     > 
                       <img className="bg-white w-5 rounded-lg" src={github} alt="github"></img>

@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
+import { Github, Twitter, Linkedin, Mail, Menu, X } from 'lucide-react'
 import fullAvatar from "/assets/fullAvatar.jpg"
 import avatar from "/assets/avatar2.jpg"
 
@@ -12,11 +12,12 @@ const CONNECT_LINKS = [
 ]
 
 const navLinkClass = (isActive) =>
-  `transition-all duration-200 ${isActive ? 'text-white font-bold scale-150' : 'text-gray-400 hover:text-gray-300'}`
+  `transition-all duration-200 ${isActive ? 'text-white font-bold md:scale-150' : 'text-gray-400 hover:text-gray-300'}`
 
 export default function Layout() {
   const { pathname } = useLocation()
   const [visitCount, setVisitCount] = useState(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const isHome = pathname === '/'
   const isProjects = pathname === '/projects'
@@ -28,29 +29,47 @@ export default function Layout() {
       .catch(() => setVisitCount(null))
   }, [])
 
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [pathname])
+
   return (
     <div className="body text-white w-full min-h-screen bg-[#171716] flex flex-col">
-      <div className="ml-25 mr-25 bg-[#171715] flex-1">
-        <nav className="navbar flex pt-2 justify-between p-3 shadow-md rounded-2xl bg-black border-b-1">
-          <div className="flex items-center gap-8">
-            <div className="h-25">
-              <img src={fullAvatar} className="h-full rounded-2xl" alt="Naufil" />
+      <div className="px-4 sm:px-6 lg:px-0 lg:ml-25 lg:mr-25 bg-[#171715] flex-1">
+        <nav className="navbar flex pt-2 justify-between items-center p-3 shadow-md rounded-2xl bg-black border-b-1">
+          <div className="flex items-center gap-3 sm:gap-6 md:gap-8 min-w-0">
+            <div className="h-12 w-12 sm:h-16 sm:w-16 md:h-25 md:w-25 flex-shrink-0">
+              <img src={fullAvatar} className="h-full w-full object-cover rounded-2xl" alt="Naufil" />
             </div>
-            <span>
-              <h1>Naufil_Kathiyara</h1>
-              <h3 className="text-[11px] text-gray-400 border-t-1 border-white">Software Developer</h3>
+            <span className="min-w-0">
+              <h1 className="text-sm sm:text-base md:text-lg truncate">Naufil_Kathiyara</h1>
+              <h3 className="text-[10px] sm:text-[11px] text-gray-400 border-t-1 border-white">Software Developer</h3>
             </span>
           </div>
-          <div className="flex items-center gap-8 pr-20">
+          <div className="hidden md:flex items-center gap-8 pr-20">
             <Link to="/" className={navLinkClass(isHome)}>Home</Link>
             <Link to="/projects" className={navLinkClass(isProjects)}>Projects</Link>
           </div>
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen((o) => !o)}
+            className="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-[#27272a] transition-colors"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </nav>
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-2 p-4 rounded-2xl bg-black border border-[#171716] flex flex-col gap-2">
+            <Link to="/" className={navLinkClass(isHome) + ' py-2 px-3 rounded-lg hover:bg-[#27272a]'} onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to="/projects" className={navLinkClass(isProjects) + ' py-2 px-3 rounded-lg hover:bg-[#27272a]'} onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+          </div>
+        )}
         <Outlet />
       </div>
 
       <footer className="mt-auto border-t border-[#27272a] bg-[#0f0f0f] text-gray-400">
-        <div className="ml-25 mr-25 py-10 px-4">
+        <div className="px-4 sm:px-6 lg:px-0 lg:ml-25 lg:mr-25 py-10">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
             <div className="flex items-start gap-6">
               <img
@@ -70,7 +89,7 @@ export default function Layout() {
             </div>
             <div>
               <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Connect</h3>
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {CONNECT_LINKS.map(({ href, Icon, label }) => (
                   <a
                     key={label}
