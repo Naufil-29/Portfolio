@@ -19,17 +19,16 @@ html, body, #root {
   scrollbar-width: none;     /* Firefox */
 }
 
-.react-github-calendar {
-  overflow: hidden  /* scrollbar remove */
+/* Hide scrollbar on calendar and all its inner scrollable elements */
+.github-calendar ::-webkit-scrollbar {
+  display: none;
 }
 
-.react-github-calendar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.react-github-calendar {
-  -ms-overflow-style: none;  /* IE aur purane Edge */
-  scrollbar-width: none;     /* Firefox */
+.github-calendar *,
+.react-github-calendar,
+.react-github-calendar * {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @keyframes spin-slow {
