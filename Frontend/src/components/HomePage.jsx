@@ -123,7 +123,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <p className="w-full text-xs sm:text-sm md:text-[12px] font-medium text-white pt-4 md:pt-3">I'm a passionate FULL stack MERN based developer who enjoys building practical and user-friendly web and desktop applications. I love turning ideas into real products, I focus on understanding core concepts deeply before moving on to advanced features. I enjoy solving problems, experimenting with new tools, and continuously improving my skills. My goal is to create clean, efficient, and creative solutions that not only work but also provide a great user experience.</p>
+            <p className="w-full text-xs sm:text-sm md:text-[12px] font-medium text-white pt-4 md:pt-6">I'm a passionate FULL stack MERN based developer who enjoys building practical and user-friendly web and desktop applications. I love turning ideas into real products, I focus on understanding core concepts deeply before moving on to advanced features. I enjoy solving problems, experimenting with new tools, and continuously improving my skills. My goal is to create clean, efficient, and creative solutions that not only work but also provide a great user experience.</p>
           </div>
         </div>
 
