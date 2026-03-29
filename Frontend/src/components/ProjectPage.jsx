@@ -2,6 +2,7 @@ import { Earth } from 'lucide-react'
 import '../App.css'
 import Notezyvideo from "/assets/Notezyvideo.mp4"
 import courseVideo from "/assets/course-saas-video.mp4"
+import llmrouterVideo from "/assets/llm-routervideo.mp4"
 import ExceildrawVideo from "/assets/ExcelidrawVideo.mp4"
 import React from "/assets/React.png"
 import Express from "/assets/Express-2.png"
@@ -16,9 +17,39 @@ import SQL from "/assets/PostgresSQL.png"
 import typescript from "/assets/TypeScript.png"
 import turborepo from "/assets/turborepoIcon.svg"
 import websocket from "/assets/websocket.svg"
+import python from "/assets/python.png"
+import openai from "/assets/Openai.png"
+import nvidia from "/assets/nvidia.png"
+import gemini from "/assets/gemini.webp"
 import github from "/assets/GitHub.png"
 
 const projects = [
+  {
+    id: 'llm-router',
+    title: 'LLM-Router',
+    date: 'March 20, 2026',
+    description: 'LLM Router that automatically selects the most suitable AI model for each query, optimizing for cost, speed, and response quality.',
+    video: llmrouterVideo,
+    githubUrl: 'https://github.com/Naufil-29',
+    demoUrl: 'https://youtu.be/XEpLr96s9m4',
+    liveUrl: 'https://llm-router-1-qh6s.onrender.com/',
+    features: [
+      'LLM Router is an orchestrator that intelligently selects the best AI model based on user query and context.',
+      'Dynamically routes requests across multiple models to optimize cost, speed, and response quality.',
+      'Streams real-time responses with token usage and cost tracking for better transparency.',
+      'Solves inefficient model usage by automating model selection instead of relying on a single LLM.'
+    ],
+    tech: [
+      { name: 'python', icon: python },
+      { name: 'openAI', icon: openai },
+      { name: 'NvidiaAI', icon: nvidia },
+      { name: 'Gemini', icon: gemini },
+      { name: 'Tailwind', icon: Tailwind },
+      { name: 'TypeScript', icon: typescript },
+      { name: 'Redis', icon: turborepo },
+      { name: 'React.js', icon: React }
+    ]
+  },
   {
     id: 'excelidraw',
     title: 'Excelidraw',

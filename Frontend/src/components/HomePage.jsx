@@ -28,6 +28,10 @@ import ws from "/assets/Socket.io.png"
 import typescript from "/assets/TypeScript.png"
 import stripe from "/assets/stripe-icon.png"
 import redis from "/assets/Redis.png"
+import openai from "/assets/Openai.png"
+import nvidia from "/assets/nvidia.png"
+import gemini from "/assets/gemini.webp"
+import python from "/assets/python.png"
 import resume from "/assets/resume.pdf"
 
 export default function HomePage() {
@@ -119,7 +123,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <p className="w-full text-xs sm:text-sm md:text-[14px] font-medium text-white pt-4 md:pt-6">I'm a passionate MERN stack developer who enjoys building practical and user-friendly web applications. I love turning ideas into real projects, I focus on understanding core concepts deeply before moving on to advanced features. I enjoy solving problems, experimenting with new tools, and continuously improving my skills. My goal is to create clean, efficient, and creative solutions that not only work but also provide a great user experience.</p>
+            <p className="w-full text-xs sm:text-sm md:text-[12px] font-medium text-white pt-4 md:pt-3">I'm a passionate FULL stack MERN based developer who enjoys building practical and user-friendly web and desktop applications. I love turning ideas into real products, I focus on understanding core concepts deeply before moving on to advanced features. I enjoy solving problems, experimenting with new tools, and continuously improving my skills. My goal is to create clean, efficient, and creative solutions that not only work but also provide a great user experience.</p>
           </div>
         </div>
 
@@ -208,12 +212,12 @@ export default function HomePage() {
           <div className="project-2 w-full md:w-1/2 min-h-0 md:h-135 rounded-2xl bg-black border-[#171716] p-3">
             <div className="inline-flex items-center justify-between border-b-1 h-4 w-full pb-1">
               <p className="h- text-[12px] font-bold">Project</p>
-              <p className="h- text-[12px] font-bold">Notezy</p>
+              <p className="h- text-[12px] font-bold">LLM-Router</p>
             </div>
-            <a href="https://youtu.be/f_N9xNn7iEA" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtu.be/XEpLr96s9m4" target="_blank" rel="noopener noreferrer">
               <iframe
                 className="w-full aspect-video min-h-[160px] md:h-45 rounded-xl mt-2"
-                src="https://www.youtube.com/embed/f_N9xNn7iEA?autoplay=1&mute=1&loop=1&playlist=f_N9xNn7iEA&controls=0"
+                src="https://www.youtube.com/embed/XEpLr96s9m4?autoplay=1&mute=1&loop=1&playlist=XEpLr96s9m4&controls=0"
                 title="Course Selling SaaS Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -222,9 +226,9 @@ export default function HomePage() {
             </a>
             <span className="px-2">
               <div className="flex items-center justify-between">
-                <h2 className="relative font-bold text-lg sm:text-[20px]">Notezy</h2>
+                <h2 className="relative font-bold text-lg sm:text-[20px]">LLM-Router</h2>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <a href="https://notezy-frontend-pdao.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://llm-router-1-qh6s.onrender.com/" target="_blank" rel="noopener noreferrer">
                     <p className="flex gap-2 text-[12px] w-25 font-bold bg-black rounded-lg decoration-0 p-1 text-center items-center">
                       <Earth alt="url" className="w-8 h-8 animate-spin-slow text-blue-500" />
                       Live-App
@@ -232,31 +236,31 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
-              <h4 className="text-[12px] text-gray-600">August_31_2025</h4>
-              <p className="text-[13px] mt-3 font-bold">Notezy is a smart, minimal notes app, with integrated AI chatbot helping you stay organized and productive with ease.</p>
+              <h4 className="text-[12px] text-gray-600">March_20_2026</h4>
+              <p className="text-[13px] mt-3 font-bold">LLM Router that automatically selects the most suitable AI model for each query, optimizing for cost, speed, and response quality.</p>
               <div className="mt-4 md:mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2">
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Node} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="Node.js" />
-                    Node.js
+                    <img src={python} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="Node.js" />
+                    python
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Express} className="w-4 h-4 flex-shrink-0 spin-y" alt="Express.js" />
-                    Express.js
+                    <img src={openai} className="w-4 h-4 flex-shrink-0 animate-spin-slow  bg-white rounded-full" alt="Express.js" />
+                    OpenAI
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={React} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="React" />
-                    React.js
+                    <img src={gemini} className="w-5 h-5 flex-shrink-0 spin-y" alt="React" />
+                    GeminiAI
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Mongodb} className="w-5 h-5 flex-shrink-0 spin-y" alt="MongoDB" />
-                    MongoDB
+                    <img src={nvidia} className="w-5 h-5 flex-shrink-0 spin-y" alt="MongoDB" />
+                    NvidiaAI
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
@@ -267,8 +271,20 @@ export default function HomePage() {
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={javascript} className="w-5 h-5 flex-shrink-0 spin-y" alt="JavaScript" />
-                    Javascript
+                    <img src={typescript} className="w-5 h-5 flex-shrink-0 spin-y" alt="JavaScript" />
+                    typescript
+                  </p>
+                </div>
+                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
+                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
+                    <img src={redis} className="w-5 h-5 flex-shrink-0 spin-y" alt="JavaScript" />
+                    Redis
+                  </p>
+                </div>
+                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
+                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
+                    <img src={React} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="JavaScript" />
+                    React.js
                   </p>
                 </div>
               </div>
@@ -310,19 +326,19 @@ export default function HomePage() {
               <h3 className="text-[12px] font-bold relative top-0 ml-1">Skills</h3>
             </div>
             <div className="flex flex-col gap-3 items-center mt-4 md:mt-6">
-              <div className="min-h-12 md:h-13 w-full max-w-[90%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
+              <div className="min-h-12 md:h-13 w-full max-w-[100%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
                 <p>Backend-Development</p>
                 <img className="w-6 md:w-8 flex-shrink-0" src={backend} alt="Backend" />
               </div>
-              <div className="min-h-12 md:h-13 w-full max-w-[90%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
+              <div className="min-h-12 md:h-13 w-full max-w-[100%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
                 <p>Desktop-Application</p>
                 <img className="w-6 md:w-8 rounded-lg flex-shrink-0" src={app} alt="App" />
               </div>
-              <div className="min-h-12 md:h-13 w-full max-w-[90%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
+              <div className="min-h-12 md:h-13 w-full max-w-[100%] flex items-center justify-start gap-3 bg-white text-black rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
                 <p>Web-Design</p>
                 <img className="w-6 md:w-8 flex-shrink-0" src={frontend} alt="Frontend" />
               </div>
-              <div className="min-h-12 md:h-13 w-full max-w-[90%] bg-white text-gray-500 rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
+              <div className="min-h-12 md:h-13 w-full max-w-[100%] bg-white text-gray-500 rounded-2xl text-sm sm:text-base md:text-lg font-semibold p-3 md:p-4">
                 <p>Devops <span>[ currently learning ]</span></p>
               </div>
             </div>
