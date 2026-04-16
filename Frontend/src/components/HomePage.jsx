@@ -305,12 +305,12 @@ export default function HomePage() {
                 </a>
               </div>
               <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
-                <a href="https://x.com/Naufil_Codes_29" className="block p-2">
+                <a href="https://x.com/X_Naufil" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={X} alt="TwitterX" />
                 </a>
               </div>
               <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
-                <a href="https://www.linkedin.com/in/naufil-kathiyara-981353360/" className="block p-2">
+                <a href="https://www.linkedin.com/in/naufil-shaikh-981353360/" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={linkedin} alt="LinkedIN" />
                 </a>
               </div>
