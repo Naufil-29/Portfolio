@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react'
 import '../App.css'
 import avatar2 from "/assets/avatar2.jpg"
-import xProfile from "/assets/xProfile.jpg"
+import xProfile from "/assets/xProfile-2.png"
 import GitHubCalendar from "react-github-calendar"
 import { Earth } from 'lucide-react'
 import React from "/assets/React.png"
@@ -32,7 +32,7 @@ import openai from "/assets/Openai.png"
 import nvidia from "/assets/nvidia.png"
 import gemini from "/assets/gemini.webp"
 import python from "/assets/python.png"
-import resume from "/assets/resume.pdf"
+import resume from "/assets/Naufil-resume.pdf"
 
 export default function HomePage() {
   const calendarRef = useRef(null)
@@ -89,13 +89,13 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="twitter-profile hidden md:inline-flex min-h-[180px] md:h-55  w-full p-3 rounded-2xl bg-black border-[#171716]">
+            <div className="twitter-profile hidden md:inline-flex min-h-[180px] md:h-55 w-full p-3 rounded-2xl bg-black border-[#171716]">
               <a href="https://x.com/Naufil_Codes_29">
                 <div className="border-b pb-1 flex items-center justify-between font-bold text-xs">
                   <h3 className="pl-2">TwitterX</h3>
                   <h3 className="pr-2">Naufil-29</h3>
                 </div>
-                <img className="mt-2 h-32 sm:h-40 md:h-45 w-full object-cover object-center rounded-2xl" src={xProfile} alt="twitterX-profile" />
+                <img className="mt-2 h-32 sm:h-40 md:h-42 w-200 object-cover object-center rounded-2xl" src={xProfile} alt="twitterX-profile" />
               </a>
             </div>
           </div>
