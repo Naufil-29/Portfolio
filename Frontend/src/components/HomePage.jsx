@@ -90,7 +90,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="twitter-profile hidden md:inline-flex min-h-[180px] md:h-55 w-full p-3 rounded-2xl bg-black border-[#171716]">
-              <a href="https://x.com/Naufil_Codes_29">
+              <a href="https://x.com/X_Naufil">
                 <div className="border-b pb-1 flex items-center justify-between font-bold text-xs">
                   <h3 className="pl-2">TwitterX</h3>
                   <h3 className="pr-2">Naufil-29</h3>
