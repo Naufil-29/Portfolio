@@ -3,6 +3,7 @@ import '../App.css'
 import Notezyvideo from "/assets/Notezyvideo.mp4"
 import courseVideo from "/assets/course-saas-video.mp4"
 import llmrouterVideo from "/assets/llm-routervideo.mp4"
+import costEstimatorVideo from "/assets/cost-estimator.mp4"
 import ExceildrawVideo from "/assets/ExcelidrawVideo.mp4"
 import React from "/assets/React.png"
 import Express from "/assets/Express-2.png"
@@ -22,8 +23,38 @@ import openai from "/assets/Openai.png"
 import nvidia from "/assets/nvidia.png"
 import gemini from "/assets/gemini.webp"
 import github from "/assets/GitHub.png"
+import supabase from "/assets/supabase.png"
+import claudeAI from "/assets/claude-ai.jpg"
 
 const projects = [
+  {
+    id: 'cost-estimator',
+    title: 'Token-cost-estimator',
+    date: 'April 28, 2026',
+    description: 'Token-cost-estimator Intelligently optimizes your given prompt + reducing tokens-usage + cost while preserving response quality from LLM.',
+    video: costEstimatorVideo,
+    githubUrl: 'https://github.com/Naufil-29',
+    demoUrl: 'https://youtu.be/AJX_xN02ckU',
+    liveUrl: 'http://ai-token-cost-estimator.vercel.app/',
+    features: [
+      'Token-cost-estimator works as a Router + Optimizer tool for user-query.',
+      "It smartly Optimizes user's prompt by restructuring prompt with help of cheaper, fastand small LLM, Reducing tokens-usage + cost of prompt.",
+      "While preserving prompt's response quality from LLM, Gives you response + compare responses from optimized and unOptimized response quality + tokens and cost usage.",
+      "Helps user by optimizing prompt's tokens-usage + cost and shows costing of that particular prompt at scale."
+    ],
+    tech: [
+      { name: 'python', icon: python },
+      { name: 'openAI', icon: openai },
+      { name: 'claudeAI', icon: claudeAI },
+      { name: 'Gemini', icon: gemini },
+      { name: 'Tailwind', icon: Tailwind },
+      { name: 'TypeScript', icon: typescript },
+      { name: 'Redis', icon: redis },
+      { name: 'supabase', icon: supabase },
+      { name: 'React.js', icon: React },
+      { name: 'Turborepo', icon: turborepo },
+    ]
+  },
   {
     id: 'llm-router',
     title: 'LLM-Router',
@@ -46,7 +77,7 @@ const projects = [
       { name: 'Gemini', icon: gemini },
       { name: 'Tailwind', icon: Tailwind },
       { name: 'TypeScript', icon: typescript },
-      { name: 'Redis', icon: turborepo },
+      { name: 'Redis', icon: redis },
       { name: 'React.js', icon: React }
     ]
   },

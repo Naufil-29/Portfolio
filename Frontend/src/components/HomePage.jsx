@@ -1,7 +1,8 @@
 import { useRef, useEffect } from 'react'
 import '../App.css'
 import avatar2 from "/assets/avatar2.jpg"
-import xProfile from "/assets/xProfile-2.png"
+
+import instaProfile from "/assets/insta-profile.jpeg"
 import GitHubCalendar from "react-github-calendar"
 import { Earth } from 'lucide-react'
 import React from "/assets/React.png"
@@ -33,6 +34,8 @@ import nvidia from "/assets/nvidia.png"
 import gemini from "/assets/gemini.webp"
 import python from "/assets/python.png"
 import resume from "/assets/Naufil-resume.pdf"
+import supabase from "/assets/supabase.png"
+import claudeAI from "/assets/claude-ai.jpg"
 
 export default function HomePage() {
   const calendarRef = useRef(null)
@@ -90,12 +93,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="twitter-profile hidden md:inline-flex min-h-[180px] md:h-55 w-full p-3 rounded-2xl bg-black border-[#171716]">
-              <a href="https://x.com/X_Naufil">
+              <a href="https://www.instagram.com/naufil.dev/">
                 <div className="border-b pb-1 flex items-center justify-between font-bold text-xs">
-                  <h3 className="pl-2">TwitterX</h3>
-                  <h3 className="pr-2">Naufil-29</h3>
+                  <h3 className="pl-2">Instagram</h3>
+                  <h3 className="pr-2">@naufil.dev</h3>
                 </div>
-                <img className="mt-2 h-32 sm:h-40 md:h-42 w-200 object-cover object-center rounded-2xl" src={xProfile} alt="twitterX-profile" />
+                <img className="mt-2 h-32 sm:h-40 md:h-42 w-200 object-cover object-center rounded-2xl" src={instaProfile} alt="twitterX-profile" />
               </a>
             </div>
           </div>
@@ -131,13 +134,13 @@ export default function HomePage() {
         <div className="project-1 w-full md:w-1/2 min-h-0 md:h-135 rounded-2xl bg-black border-[#171716] p-3">
             <div className="inline-flex items-center justify-between border-b-1 h-4 w-full pb-1">
               <p className="h- text-[12px] font-bold">Project</p>
-              <p className="h- text-[12px] font-bold">CoursERA</p>
+              <p className="h- text-[12px] font-bold">Token-cost-estimator</p>
             </div>
             <a href="https://www.youtube.com/watch?v=_PGDgbsfRIQ" target="_blank" rel="noopener noreferrer">
               <iframe
                 className="w-full aspect-video min-h-[160px] md:h-45 rounded-xl mt-2"
-                src="https://www.youtube.com/embed/_PGDgbsfRIQ?autoplay=1&mute=1&loop=1&playlist=_PGDgbsfRIQ&controls=0"
-                title="Course Selling SaaS Demo"
+                src="https://www.youtube.com/embed/AJX_xN02ckU?autoplay=1&mute=1&loop=1&playlist=AJX_xN02ckU&controls=0"
+                title="Token-cost-estimator Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -145,9 +148,9 @@ export default function HomePage() {
             </a>
             <span className="px-2">
               <div className="flex items-center justify-between">
-                <h2 className="relative font-bold text-lg sm:text-[20px]">CoursERA</h2>
+                <h2 className="relative font-bold text-lg sm:text-[20px]">Cost-estimator</h2>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <a href="https://coursera-oanq.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <a href="http://ai-token-cost-estimator.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <p className="flex gap-2 text-[12px] w-25 font-bold bg-black rounded-lg decoration-0 p-1 text-center items-center">
                       <Earth alt="url" className="w-8 h-8 animate-spin-slow text-blue-500" />
                       Live-App
@@ -155,37 +158,37 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
-              <h4 className="text-[12px] text-gray-600">March_03_2026</h4>
-              <p className="text-[13px] mt-3 font-bold">CoursERA is a full-stack learning-platform, where user can purchase and learn new skills And admins can create, sell and maintain contnents</p>
+              <h4 className="text-[12px] text-gray-600">April_28_2026</h4>
+              <p className="text-[13px] mt-3 font-bold">Token-cost-estimator smartly optimizes and resturctures user's prompt for reducing tokens-usage + preserving response quality from LLM, By this it helps user to optimize cost of AI-api usage</p>
               <div className="mt-4 md:mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2">
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Node} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="Node.js" />
-                    Node.js
-                  </p>
-                </div>
-                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Express} className="w-4 h-4 flex-shrink-0 spin-y" alt="Express.js" />
-                    Express.js
-                  </p>
-                </div>
-                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={stripe} className="w-4 h-4 flex-shrink-0 spin-y" alt="Stripe" />
-                    Stripe
-                  </p>
-                </div>
-                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={React} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="React" />
+                    <img src={React} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="Node.js" />
                     React.js
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Mongodb} className="w-5 h-5 flex-shrink-0 spin-y" alt="MongoDB" />
-                    MongoDB
+                    <img src={python} className="w-4 h-4 flex-shrink-0 animate-spin-slow" alt="Express.js" />
+                    python  
+                  </p>
+                </div>
+                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
+                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
+                    <img src={openai} className="w-4 h-4 flex-shrink-0 animate-spin-slow bg-white rounded-full" alt="Stripe" />
+                    open.AI
+                  </p>
+                </div>
+                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
+                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
+                    <img src={claudeAI} className="w-5 h-5 flex-shrink-0 spin-y" alt="React" />
+                    claude.AI
+                  </p>
+                </div>
+                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
+                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
+                    <img src={supabase} className="w-5 h-5 flex-shrink-0 spin-y" alt="MongoDB" />
+                    Supabase
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
@@ -194,18 +197,7 @@ export default function HomePage() {
                     Redis
                   </p>
                 </div>
-                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={Tailwind} className="w-5 h-5 flex-shrink-0 animate-spin-slow" alt="Tailwind" />
-                    Tailwind
-                  </p>
-                </div>
-                <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
-                  <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
-                    <img src={javascript} className="w-5 h-5 flex-shrink-0 spin-y" alt="JavaScript" />
-                    Javascript
-                  </p>
-                </div>
+                
               </div>
             </span>
           </div>
@@ -248,7 +240,7 @@ export default function HomePage() {
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
                   <p className="flex gap-2 text-[10px] h-8 bg-[#171716] rounded-lg px-2 items-center">
                     <img src={openai} className="w-4 h-4 flex-shrink-0 animate-spin-slow  bg-white rounded-full" alt="Express.js" />
-                    OpenAI
+                    Open.AI
                   </p>
                 </div>
                 <div className="perspective inline-block hover:scale-110 transition-transform duration-200">
@@ -305,7 +297,7 @@ export default function HomePage() {
                 </a>
               </div>
               <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
-                <a href="https://x.com/X_Naufil" className="block p-2">
+                <a href="https://x.com/Naufil_Codes_29" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={X} alt="TwitterX" />
                 </a>
               </div>
