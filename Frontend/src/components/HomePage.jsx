@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react'
 import '../App.css'
 import avatar2 from "/assets/avatar2.jpg"
-
 import instaProfile from "/assets/insta-profile.jpeg"
 import GitHubCalendar from "react-github-calendar"
 import { Earth } from 'lucide-react'
@@ -63,7 +62,7 @@ export default function HomePage() {
     return () => {
       timeouts.forEach(clearTimeout)
       clearInterval(id)
-      clearTimeout(t)
+      clearTimeout(t);
     }
   }, [])
 
@@ -297,7 +296,7 @@ export default function HomePage() {
                 </a>
               </div>
               <div className="w-1/2 bg-white md:bg-black min-w-[120px] flex-1 rounded-lg flex items-center justify-center">
-                <a href="https://x.com/Naufil_Codes_29" className="block p-2">
+                <a href="https://x.com/X_Naufil" className="block p-2">
                   <img className="bg-white w-14 h-14 sm:w-20 sm:h-20 rounded-xl border-1 hover:scale-110 transition-transform object-contain" src={X} alt="TwitterX" />
                 </a>
               </div>

@@ -5,7 +5,7 @@ import fullAvatar from "/assets/fullAvatar.jpg"
 import avatar from "/assets/avatar2.jpg"
 
 const CONNECT_LINKS = [
-  { href: 'https://x.com/Naufil_Codes_29', Icon: Twitter, label: 'Twitter/X' },
+  { href: 'https://x.com/X_Naufil', Icon: Twitter, label: 'Twitter/X' },
   { href: 'https://www.linkedin.com/in/naufil-kathiyara-981353360/', Icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://github.com/Naufil-29', Icon: Github, label: 'GitHub' },
   { href: 'mailto:dev.naufil@gmail.com?subject=Portfolio%20Inquiry', Icon: Mail, label: 'Email' }

@@ -1,4 +1,4 @@
-import { Earth } from 'lucide-react'
+import { Earth } from 'lucide-react';
 import '../App.css'
 import Notezyvideo from "/assets/Notezyvideo.mp4"
 import courseVideo from "/assets/course-saas-video.mp4"
